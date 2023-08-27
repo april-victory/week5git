@@ -1,0 +1,65 @@
+@font-face {
+  src: url(../fonts/YuseiMagic-Regular.woff2) format("woff2"),
+    url(../fonts/YuseiMagic-Regular.woff) format("woff");
+  font-family: "YuseiMagic";
+}
+
+html {
+  font-family: "YuseiMagic", Tahoma, sans-serif;
+  background-color: antiquewhite;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  margin: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+}
+/* Ниже описание ссылок в навигационном меню */
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: darkgray;
+}
+
+a:hover {
+  color: grey;
+}
+
+a:active {
+  color: darkmagenta;
+}
+.galery {
+  position: relative;
+  display: inline-block;
+}
+
+.magic_img {
+  box-sizing: border-box;
+  width: calc(100vw / 4);
+  margin: 15px;
+  border: 2px dashed grey;
+  padding: 15px;
+}
+
+/* Как будет отображаться картинка при наведении мыши */
+.magic_img:hover {
+  position: relative;
+  border: 2px dashed black;
+  background-color: purple;
+  width: calc(100vw / 3);
+}
